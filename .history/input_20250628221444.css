@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'PT Sans';
+}
+
+#slide{
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.73);
+}
+.sticky {
+    position: fixed;
+    top: -10;
+    width: 100%;
+    background-color: rgba(0,33,71 0.07);
+}
+.sticky+.content {
+    padding-top: 102px;
+} 
+ @keyframes fadeInLeft {
+    from {
+    opacity: 0;
+    transform: translateX(-60px);
+    }
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+.animate-fade-in-left {
+    opacity: 0;
+    animation: fadeInLeft 1s forwards;
+    animation-delay: 0.2s;
+}

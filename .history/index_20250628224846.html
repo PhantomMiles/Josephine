@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josephine | Portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- TailwindCSS is assumed to be included in main.css -->
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-gray-100 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header id="myHeader" class="z-20 sticky top-0 flex items-center justify-between w-full px-10 py-5 backdrop-blur shadow-xl shadow-black/20 bg-gray-900/80">
+    <h1 class="text-2xl font-extrabold tracking-widest text-purple-400">JOSEPHINE</h1>
+    <nav class="flex gap-6">
+      <a href="index.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Home</a>
+      <a href="about.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">About</a>
+      <a href="prjct.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Projects</a>
+      <a href="feedback.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="flex-1 flex items-center justify-center bg-gradient-to-br from-gray-900/90 to-gray-800/80 relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute w-96 h-96 bg-purple-900 rounded-full opacity-20 blur-3xl top-10 left-1/2 -translate-x-1/2 animate-pulse"></div>
+    </div>
+    <div class="relative z-10 px-6 py-24 max-w-4xl mx-auto w-full flex flex-col md:flex-row items-center justify-center gap-12">
+    <!-- Animated Image -->
+    <div class="flex-shrink-0 animate-fade-in-left">
+      <img src="img/josephine.jpg" alt="Josephine" class="w-40 h-40 rounded-full object-cover shadow-2xl border-4 border-gray-700" />
+    </div>
+    <!-- Text Content -->
+    <div class="text-center md:text-left">
+      <h2 class="text-5xl sm:text-7xl font-extrabold text-gray-100 drop-shadow-lg animate-fade-in-down">Hi, I'm Josephine</h2>
+      <p class="mt-6 text-xl sm:text-2xl text-purple-200 font-medium animate-fade-in-up">A passionate web developer crafting beautiful, modern, and interactive experiences.</p>
+      <div class="mt-10 flex justify-center md:justify-start gap-6 animate-fade-in-up">
+      <a href="#projects" class="px-8 py-3 rounded-full bg-purple-700 text-white font-semibold shadow-lg hover:bg-purple-800 transition">View Projects</a>
+      <a href="feedback.html" class="px-8 py-3 rounded-full border border-purple-700 text-purple-200 font-semibold hover:bg-purple-200 hover:text-gray-900 transition">Contact Me</a>
+      </div>
+    </div>
+    </div>
+  </section>
+  <style>
+  </style>
+
+  <!-- Stats Section -->
+  <section class="bg-gray-800 py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <dl class="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+        <div>
+          <dt class="text-lg text-purple-400 font-semibold">Projects</dt>
+          <dd class="text-3xl font-bold text-gray-100 mt-2">15+</dd>
+        </div>
+        <div>
+          <dt class="text-lg text-purple-400 font-semibold">Clients</dt>
+          <dd class="text-3xl font-bold text-gray-100 mt-2">10+</dd>
+        </div>
+        <div>
+          <dt class="text-lg text-purple-400 font-semibold">Years Exp.</dt>
+          <dd class="text-3xl font-bold text-gray-100 mt-2">3</dd>
+        </div>
+        <div>
+          <dt class="text-lg text-purple-400 font-semibold">Certifications</dt>
+          <dd class="text-3xl font-bold text-gray-100 mt-2">4</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="px-6 py-20 bg-gray-900">
+    <h2 class="mb-12 text-4xl font-extrabold text-center text-purple-300">Featured Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+      <!-- Project Card 1 -->
+      <div class="group bg-gray-800 rounded-2xl shadow-xl hover:shadow-2xl transition overflow-hidden relative">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80" alt="ICC TIH Mall" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-purple-300 mb-2">ICC TIH Mall Website</h3>
+          <p class="text-gray-300 mb-4">A modern e-commerce platform for ICC TIH Mall, featuring product listings, secure checkout, and admin dashboard.</p>
+          <ul class="flex flex-wrap gap-2 mb-4">
+            <li class="px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-xs font-semibold">HTML</li>
+            <li class="px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-xs font-semibold">CSS</li>
+            <li class="px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-xs font-semibold">JavaScript</li>
+          </ul>
+          <a href="#" class="inline-block mt-2 text-purple-400 font-semibold hover:underline">View Project &rarr;</a>
+        </div>
+      </div>
+      <!-- Project Card 2 -->
+      <div class="group bg-gray-800 rounded-2xl shadow-xl hover:shadow-2xl transition overflow-hidden relative">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Nested Real Estate" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-purple-300 mb-2">Nested Real Estate Website</h3>
+          <p class="text-gray-300 mb-4">A real estate platform for property listings, agent profiles, and advanced search, designed for seamless user experience.</p>
+          <ul class="flex flex-wrap gap-2 mb-4">
+        <li class="px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-xs font-semibold">HTML</li>
+        <li class="px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-xs font-semibold">CSS</li>
+        <li class="px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-xs font-semibold">JavaScript</li>
+          </ul>
+          <a href="#" class="inline-block mt-2 text-purple-400 font-semibold hover:underline">View Project &rarr;</a>
+        </div>
+      </div>
+      <!-- Project Card 3: PlayMath -->
+      <div class="group bg-gray-800 rounded-2xl shadow-xl hover:shadow-2xl transition overflow-hidden relative">
+        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="PlayMath" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-purple-300 mb-2">PlayMath Website</h3>
+          <p class="text-gray-300 mb-4">An interactive math learning platform with games, quizzes, and progress tracking to make math fun for kids.</p>
+          <ul class="flex flex-wrap gap-2 mb-4">
+        <li class="px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-xs font-semibold">HTML</li>
+        <li class="px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-xs font-semibold">CSS</li>
+        <li class="px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-xs font-semibold">JavaScript</li>
+          </ul>
+          <a href="#" class="inline-block mt-2 text-purple-400 font-semibold hover:underline">View Project &rarr;</a>
+        </div>
+      </div>
+        </div>
+        <div class="flex justify-center mt-12">
+      <a href="prjct.html" class="px-8 py-3 rounded-full bg-purple-700 text-white font-semibold shadow-lg hover:bg-purple-800 transition">View All Projects</a>
+        </div>
+      </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-gray-950 text-purple-200 shadow-inner mt-10">
+    <div class="container mx-auto text-center">
+      <p class="mb-4 text-lg">Connect with me on social media:</p>
+      <div class="flex justify-center space-x-8 mb-4">
+        <a href="https://twitter.com" target="_blank" class="hover:text-purple-400 transition">
+          <!-- Twitter SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-8.384 4.482A13.94 13.94 0 011.671 3.149a4.916 4.916 0 001.523 6.573 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.918 4.918 0 004.6 3.417A9.867 9.867 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A9.936 9.936 0 0024 4.557z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="hover:text-purple-400 transition">
+          <!-- LinkedIn SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.027-3.063-1.867-3.063-1.868 0-2.155 1.459-2.155 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.037 0 3.6 2.001 3.6 4.604v5.592z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/PhantomMiles" target="_blank" class="hover:text-purple-400 transition">
+          <!-- GitHub SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.335-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.435.375.81 1.102.81 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.573 4.77-1.587 8.205-6.084 8.205-11.387 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+      <p class="text-sm text-purple-400">&copy; 2025 Josephine. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Simple fade-in animation using vanilla JS -->
+  <script>
+  // Animate elements with .animate-fade-in-down and .animate-fade-in-up
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.animate-fade-in-down').forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(-40px)';
+      setTimeout(() => {
+        el.style.transition = 'opacity 1s, transform 1s';
+        el.style.opacity = 1;
+        el.style.transform = 'translateY(0)';
+      }, 200);
+    });
+    document.querySelectorAll('.animate-fade-in-up').forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(40px)';
+      setTimeout(() => {
+        el.style.transition = 'opacity 1s, transform 1s';
+        el.style.opacity = 1;
+        el.style.transform = 'translateY(0)';
+      }, 400);
+    });
+  });
+  </script>
+</body>
+</html>

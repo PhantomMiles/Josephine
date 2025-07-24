@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'PT Sans';
+}
+
+#slide{
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.73);
+}
+.sticky {
+    position: fixed;
+    top: -10;
+    width: 100%;
+    /* background-color: rgba(226, 226, 226, 0.600); */
+}
+.sticky+.content {
+    padding-top: 102px;
+} 
