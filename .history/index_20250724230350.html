@@ -10,55 +10,35 @@
 <body class="flex flex-col min-h-screen text-gray-100 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700">
 
   <!-- Header -->
-  <header id="myHeader" class="sticky top-0 z-20 w-full shadow-xl bg-gray-900/80 backdrop-blur shadow-black/20">
-  <div class="flex items-center justify-between px-4 py-5 sm:px-10">
-    <h1 class="mr-4 text-2xl font-extrabold tracking-widest text-purple-400 sm:mr-10">JOSEPHINE</h1>
-    <!-- Hamburger Button (Mobile) -->
-    <button id="menu-btn" class="flex flex-col items-center justify-center w-10 h-10 rounded sm:hidden focus:outline-none focus:ring-2 focus:ring-purple-500" aria-label="Open Menu">
-      <span class="block w-6 h-0.5 bg-purple-400 mb-1"></span>
-      <span class="block w-6 h-0.5 bg-purple-400 mb-1"></span>
-      <span class="block w-6 h-0.5 bg-purple-400"></span>
-    </button>
-    <!-- Desktop Menu -->
-    <nav id="desktop-menu" class="hidden gap-6 sm:flex">
-      <a href="index.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full">Home</a>
+  <header id="myHeader" class="sticky top-0 z-20 flex items-center justify-between w-full px-10 py-5 shadow-xl backdrop-blur shadow-black/20 bg-gray-900/80">
+    <h1 class="text-2xl font-extrabold tracking-widest text-purple-400">JOSEPHINE</h1>
+    <nav class="flex gap-6">
+      <a href="index.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full ">Home</a>
       <a href="about.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">About</a>
-      <a href="prjct.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left text-sm sm:text-base">
-   Projects
-</a>
-<a href="feedback.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left text-sm sm:text-base">
-   Contact
-</a>
+      <a href="prjct.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Projects</a>
+      <a href="feedback.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Contact</a>
     </nav>
-  </div>
-  <!-- Mobile Menu -->
-  <nav id="mobile-menu" class="flex-col hidden gap-2 px-4 pb-4 sm:hidden bg-gray-900/95">
-    <a href="index.html" class="block py-2 font-medium text-purple-400 hover:text-purple-200">Home</a>
-    <a href="about.html" class="block py-2 font-medium text-purple-400 hover:text-purple-200">About</a>
-    <a href="prjct.html" class="block py-2 font-medium text-purple-400 hover:text-purple-200">Projects</a>
-    <a href="feedback.html" class="block py-2 font-medium text-purple-400 hover:text-purple-200">Contact</a>
-  </nav>
-</header>
+  </header>
 
   <!-- Hero Section -->
   <section id="hero" class="relative flex items-center justify-center flex-1 overflow-hidden bg-gradient-to-br from-gray-900/90 to-gray-800/80">
     <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute -translate-x-1/2 bg-purple-900 rounded-full w-96 h-96 opacity-20 blur-3xl top-10 left-1/2 animate-pulse"></div>
-      </div>
-      <div class="relative z-10 flex flex-col items-center justify-center w-full max-w-4xl gap-12 px-6 py-24 mx-auto md:flex-row">
-      <!-- Animated Image -->
-      <div class="flex-shrink-0 animate-fade-in-left">
-        <img src="img/josephine.jpg" alt="Josephine" class="object-cover w-40 h-40 border-4 border-gray-700 rounded-full shadow-2xl" />
-      </div>
-      <!-- Text Content -->
-      <div class="text-center md:text-left">
-        <h2 class="text-5xl font-extrabold text-gray-100 sm:text-7xl drop-shadow-lg animate-fade-in-down">Hi, I'm Josephine</h2>
-        <p class="my-6 text-xl font-medium text-purple-200 sm:text-2xl animate-fade-in-up">A passionate web developer crafting beautiful, modern, and interactive experiences.</p>
-        <div class="flex flex-col justify-center gap-4 md:flex-row md:justify-left">
-          <a href="#projects" class="px-8 py-3 font-semibold text-white transition bg-purple-700 rounded-full shadow-lg hover:bg-purple-800">View Projects</a>
-          <a href="feedback.html" class="px-8 py-3 font-semibold text-purple-200 transition border border-purple-700 rounded-full hover:bg-purple-200 hover:text-gray-900">Contact Me</a>
-        </div>  
-      </div>
+    <div class="absolute -translate-x-1/2 bg-purple-900 rounded-full w-96 h-96 opacity-20 blur-3xl top-10 left-1/2 animate-pulse"></div>
+    </div>
+    <div class="relative z-10 flex flex-col items-center justify-center w-full max-w-4xl gap-12 px-6 py-24 mx-auto md:flex-row">
+    <!-- Animated Image -->
+    <div class="flex-shrink-0 animate-fade-in-left">
+      <img src="img/josephine.jpg" alt="Josephine" class="object-cover w-40 h-40 border-4 border-gray-700 rounded-full shadow-2xl" />
+    </div>
+    <!-- Text Content -->
+    <div class="text-center md:text-left">
+      <h2 class="text-5xl font-extrabold text-gray-100 sm:text-7xl drop-shadow-lg animate-fade-in-down">Hi, I'm Josephine</h2>
+      <p class="mt-6 text-xl font-medium text-purple-200 sm:text-2xl animate-fade-in-up">A passionate web developer crafting beautiful, modern, and interactive experiences.</p>
+      <div class="flex flex-col justify-center gap-4 xs:flex-row xs:gap-6">
+  <a href="#projects" class="px-6 py-2 text-sm font-semibold text-white transition bg-purple-600 rounded-full shadow-lg xs:px-8 xs:py-3 hover:bg-purple-700 xs:text-base whitespace-nowrap">View Projects</a>
+  <a href="feedback.html" class="px-6 py-2 text-sm font-semibold text-purple-100 transition border border-purple-200 rounded-full xs:px-8 xs:py-3 hover:bg-purple-100 hover:text-purple-700 xs:text-base whitespace-nowrap">Contact Me</a>
+</div>
+    </div>
     </div>
   </section>
 
@@ -300,20 +280,6 @@
         el.style.transform = 'translateY(0)';
       }, 400);
     });
-  });
-  </script>
-  <script>
-  // Hamburger menu toggle
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-  // Hide mobile menu on resize to desktop
-  window.addEventListener('resize', () => {
-    if (window.innerWidth >= 640) {
-      mobileMenu.classList.add('hidden');
-    }
   });
   </script>
 </body>
