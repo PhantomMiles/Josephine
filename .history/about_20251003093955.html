@@ -9,21 +9,20 @@
 <body class="flex flex-col min-h-screen text-gray-100 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700">
 
   <!-- Header -->
- <header id="myHeader" class="sticky top-0 z-20 w-full shadow-xl bg-gray-900/80 backdrop-blur shadow-black/20">
-    <div class="flex items-center justify-between px-4 py-5 sm:px-10">
-      <h1 class="text-2xl font-extrabold tracking-widest text-purple-400">JOSEPHINE</h1>
-      <button id="menu-btn" class="flex flex-col items-center justify-center w-10 h-10 rounded sm:hidden focus:outline-none focus:ring-2 focus:ring-purple-500" aria-label="Open Menu">
-        <span class="block w-6 h-0.5 bg-purple-400 mb-1"></span>
-        <span class="block w-6 h-0.5 bg-purple-400 mb-1"></span>
-        <span class="block w-6 h-0.5 bg-purple-400"></span>
-      </button>
-      <nav class="flex gap-6">
-        <a href="index.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Home</a>
-        <a href="about.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full ">About</a>
-        <a href="prjct.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Projects</a>
-        <a href="feedback.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Contact</a>
-      </nav>
-    </div>
+  <header class="sticky top-0 z-20 flex items-center justify-between w-full px-10 py-5 shadow-xl backdrop-blur shadow-black/20 bg-gray-900/80">
+     <div class="flex items-center justify-between px-4 py-5 sm:px-10"></div>
+    <h1 class="text-2xl font-extrabold tracking-widest text-purple-400">JOSEPHINE</h1>
+    <button id="menu-btn" class="flex flex-col items-center justify-center w-10 h-10 rounded sm:hidden focus:outline-none focus:ring-2 focus:ring-purple-500" aria-label="Open Menu">
+      <span class="block w-6 h-0.5 bg-purple-400 mb-1"></span>
+      <span class="block w-6 h-0.5 bg-purple-400 mb-1"></span>
+      <span class="block w-6 h-0.5 bg-purple-400"></span>
+    </button>
+    <nav class="flex gap-6">
+      <a href="index.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Home</a>
+      <a href="about.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full ">About</a>
+      <a href="prjct.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Projects</a>
+      <a href="feedback.html" class="relative font-medium transition text-purple-400 hover:text-purple-200 after:block after:absolute after:h-[2px] after:bg-purple-500 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Contact</a>
+    </nav>
     <!-- Mobile Menu -->
   <nav id="mobile-menu" class="flex-col hidden gap-2 px-4 pb-4 sm:hidden bg-gray-900/95">
     <a href="index.html" class="block py-2 font-medium text-purple-400 hover:text-purple-200">Home</a>
@@ -135,19 +134,5 @@
       <p class="text-sm text-purple-400">&copy; 2025 Josephine. All rights reserved.</p>
     </div>
   </footer>
-  <script>
-  // Hamburger menu toggle
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-  // Hide mobile menu on resize to desktop
-  window.addEventListener('resize', () => {
-    if (window.innerWidth >= 640) {
-      mobileMenu.classList.add('hidden');
-    }
-  });
-  </script>
 </body>
 </html>
